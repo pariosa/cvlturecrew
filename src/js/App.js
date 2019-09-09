@@ -5,6 +5,7 @@ import React, { Component } from 'react';
 import About from './About';
 import Home from './Home';
 import Contact from './Contact';
+import Events from './Events';
 import Services from './Services';
 import Particles from 'react-particles-js'
 class App extends Component {
@@ -126,6 +127,63 @@ class App extends Component {
                   }
               }} />
                 <About/>
+              </div>
+            </div>
+            <div label="Events">
+              <div className="content-bg">
+              <Particles
+                  params={{
+                    "particles": {
+                        "number": {
+                            "value": 160,
+                            "density": {
+                                "enable": false
+                            }
+                        },
+                        "size": {
+                            "value": 3,
+                            "random": true,
+                            "anim": {
+                                "speed": 4,
+                                "size_min": 0.3
+                            }
+                        },
+                        "line_linked": {
+                            "enable": false
+                        },
+                        "move": {
+                            "random": true,
+                            "speed": 1,
+                            "direction": "top",
+                            "out_mode": "out"
+                        }
+                    },
+                    "interactivity": {
+                        "events": {
+                            "onhover": {
+                                "enable": true,
+                                "mode": "bubble"
+                            },
+                            "onclick": {
+                                "enable": true,
+                                "mode": "repulse"
+                            }
+                        },
+                        "modes": {
+                            "bubble": {
+                                "distance": 250,
+                                "duration": 2,
+                                "size": 0,
+                                "opacity": 0
+                            },
+                            "repulse": {
+                                "distance": 400,
+                                "duration": 4
+                            }
+                        }
+                    }
+                }} />
+               <Events/>
               </div>
             </div>
             <div label="Services">
