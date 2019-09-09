@@ -9,8 +9,7 @@ class App extends Component {
       return(
         <div className="Layout">   
             <Header />
-            Here is the future home of Cvlture Crew!
-        </div>
+         </div>
       )
     } 
 }
