@@ -8,14 +8,10 @@ class Header extends Component {
   render() {     
       return(
         <div className="Header">   
-        <Particles height="200px"/>
-        <img src={logo} style={{maxWidth:'500px', marginTop:'-250px'}}></img>
-        
-        
+          <Particles height="200px"/>
+          <img src={logo} style={{maxWidth:'600px', marginTop:'-250px'}}></img>
         </div>
       )
     } 
-}
-//<Header />
-//<MainContent /> 
+} 
 export default Header;
