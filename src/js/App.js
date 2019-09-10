@@ -6,18 +6,20 @@ import About from './About';
 import Home from './Home';
 import Contact from './Contact';
 import Events from './Events';
+import PastEvents from './PastEvents';
 import Services from './Services';
 import Particles from 'react-particles-js'
+import PropTypes from 'prop-types';
 class App extends Component {
  
   render() {     
       return(
-        <div className="Layout">   
+        <div className="Layout" style={{margin:'0',padding:'0',height:'100%', display: 'flex',flexDirection: 'column'}}>   
             <Header />
             <Tabs>
             <div label="Home">
               <div className="content-bg">
-              <Particles
+              <Particles className="Particles"
                 params={{
                   "particles": {
                       "number": {
@@ -74,7 +76,7 @@ class App extends Component {
             </div>
             <div label="About">
               <div className="content-bg">
-              <Particles
+              <Particles className="Particles"
                 params={{
                   "particles": {
                       "number": {
@@ -131,7 +133,8 @@ class App extends Component {
             </div>
             <div label="Events">
               <div className="content-bg">
-              <Particles
+              <Particles className="Particles"
+
                   params={{
                     "particles": {
                         "number": {
@@ -184,11 +187,12 @@ class App extends Component {
                     }
                 }} />
                <Events/>
+               <PastEvents/>
               </div>
             </div>
             <div label="Services">
               <div className="content-bg">
-                <Particles
+                <Particles className="Particles"
                   params={{
                     "particles": {
                         "number": {
@@ -245,7 +249,7 @@ class App extends Component {
             </div>
             <div label="Contact">
               <div className="content-bg">
-              <Particles
+              <Particles className="Particles"
                   params={{
                     "particles": {
                         "number": {
@@ -297,7 +301,7 @@ class App extends Component {
                         }
                     }
                 }} />
-               <Contact/>
+               <Contact env={this.props.env} />
               </div>
             </div>
             </Tabs>
@@ -305,5 +309,9 @@ class App extends Component {
       )
     } 
 } 
+App.propTypes = {
+  env: PropTypes.object.isRequired
+};
+
 
 export default App;
