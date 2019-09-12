@@ -11,13 +11,13 @@
   display: flex;
   flex-direction: column;
     width:100%;    
-    background-color:#b3b3ff;
+    background-color:#ab4aff;
 }
 .tab-list-item {
     width:20%;
     height:60px;
 font-family: 'Orbitron', sans-serif;
-    background-color:#b3b3ff;
+    background-color:#ab4aff;
     text-align:center;
     display: inline-block;
     list-style: none;

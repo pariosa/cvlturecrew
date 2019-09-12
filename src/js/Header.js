@@ -36,7 +36,7 @@ class Header extends Component {
               }
             }}
           />
-          <img src={logo} style={{maxWidth:'600px', marginTop:'-250px'}}></img>
+          <img src={logo} style={{maxWidth:'600px',maxHeight:'180px', top:'1%',position:'absolute', marginLeft:'-300px'}}></img>
         </div>
       )
     } 
