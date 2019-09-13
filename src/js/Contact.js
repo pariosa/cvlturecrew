@@ -85,8 +85,7 @@ class Contact extends Component {
           </a>
           <br/>
           <br/>
-
-
+        <div style={{fontSize:'30px', lineHeight:'1.5em', textAlign:'center'}}>
           Email: <a href="mailto:info@cvlturecrew.com">info@cvlturecrew.com</a>
           <br/>
 
@@ -95,7 +94,9 @@ class Contact extends Component {
           FB: <a href="https://www.facebook.com/cvlturecrew">cvlturecrew</a>
           <br/>
           IG: <a href="https://www.instagram.com/cvlturecrew/?hl=en"> @cvlturecrew </a>
+            </div>  
  </div> 
+
             </div>
         )
     }

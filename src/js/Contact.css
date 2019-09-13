@@ -6,10 +6,22 @@
     font-family: 'Roboto', sans-serif;
     font-size:17px;
     color:white;
-    height:600px;
+    height:670px;
     background-color: rgb(171, 74, 255, 0.4);
     border-radius:0.5em;
     margin-left:13%;
     margin-bottom:35%;
     position:relative;
+}
+.Contact > .btn-group  > div > a {
+    color:#dbb51d!important;
+}
+.Contact > .btn-group > div > a:link {
+    color:#dbb51d;
+}
+.Contact > .btn-group > div > a:visited {
+    color:#dbb51d;
+}
+.Contact > .btn-group > div > a:active {
+    color:#dbb51d;
 }
