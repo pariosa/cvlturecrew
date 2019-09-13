@@ -27,8 +27,7 @@ render() {
            		<div style={{fontSize:'36px',textAlign:'center', lineHeight:'1em',fontFamily: 'Orbitron'}}>PAST EVENTS</div>
       				<br/><br/>
       				<img src={FLYER}  onClick={() => this.setState({ isOpen: true })} style={{maxWidth:'100%'}}/>
-              <br/><br/>
-      				<img src={TRAPPED}  onClick={() => this.setState({ isOpen: true })} style={{maxWidth:'100%'}}/>
+       				<img src={TRAPPED}  onClick={() => this.setState({ isOpen: true })} style={{maxWidth:'100%'}}/>
               {isOpen && (
                     <Lightbox
                         mainSrc={images[photoIndex]}

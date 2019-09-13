@@ -14,12 +14,13 @@ class App extends Component {
  
   render() {     
       return(
-        <div className="Layout" style={{margin:'0',padding:'0',height:'100%', display: 'flex',flexDirection: 'column'}}>   
+        <div className="Layout" style={{margin:'0',padding:'0'}}>   
             <Header />
             <Tabs>
             <div label="Home">
               <div className="content-bg">
               <Particles className="Particles"
+                style={{position:'absolute'}}
                 params={{
                   "particles": {
                       "number": {
@@ -128,7 +129,7 @@ class App extends Component {
                       }
                   }
               }} />
-                <About/>
+                <About />
               </div>
             </div>
             <div label="Events">

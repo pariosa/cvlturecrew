@@ -26,6 +26,8 @@
     text-align:center;
     background-color: rgb(171, 74, 255, 0.4);
     margin-left:13%;
+    display:inline-block;
+
     /*top:-1050px;*/ 
     margin-bottom:35%;
     position:relative;
@@ -33,16 +35,19 @@
  .Events > img{
    max-width:200px;
    max-height:300px;
+   display:inline-block;
    cursor:pointer;
    margin:0 auto; 
    text-align:center;
    position:relative;
 }
  .PastEvents > img{ 
+   padding:10px;
    max-height:300px;
    align:center;
+   display:inline-block;
    cursor:pointer;
-   margin:0 auto;
+    margin:0 auto;
     max-width:200px;
     text-align:center;
  }
