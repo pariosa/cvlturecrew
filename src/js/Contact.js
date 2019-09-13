@@ -83,6 +83,18 @@ class Contact extends Component {
           Send Mail
           </Button> 
           </a>
+          <br/>
+          <br/>
+
+
+          Email: <a href="mailto:info@cvlturecrew.com">info@cvlturecrew.com</a>
+          <br/>
+
+          Phone:  <a href="tel:513-652-8652">513.652.8652</a>
+          <br/>
+          FB: <a href="https://www.facebook.com/cvlturecrew">cvlturecrew</a>
+          <br/>
+          IG: <a href="https://www.instagram.com/cvlturecrew/?hl=en"> @cvlturecrew </a>
  </div> 
             </div>
         )
