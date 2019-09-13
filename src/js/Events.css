@@ -6,12 +6,14 @@
     font-size:17px;
     margin-top:10%;
     color:white;
-    background-color: #ab4aff;
+    background-color: #ab4aff;    
+    /*max-height:1vh;*/
     margin-left:13%;
     /*top:-1050px;*/ 
  }
  .PastEvents{
     width:75%;
+    /*max-height:1vh;*/
     margin:0 auto;
     padding:50px;
     margin-top:100px;
@@ -23,4 +25,14 @@
     /*top:-1050px;*/ 
     margin-bottom:35%;
     position:relative;
+ }
+ .Events > img{
+   max-width:200px;
+   cursor:pointer;
+   margin:0 auto; 
+   position:relative;
+}
+ .PastEvents > img{ 
+   cursor:pointer;
+    max-width:200px;
  }

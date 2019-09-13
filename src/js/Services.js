@@ -9,12 +9,18 @@ class Services extends Component {
 				<div style={{fontSize:'39px'}}>SERVICES</div>
 				<br/> <br/>
  				<strong>
-				Our network-family extends throughout the Midwest and beyond; 
-				touching on several key industries in  This is your invitation to plug-in, 
-				to expand your brand/company with our services.
-				</strong>
-				<br/>				<br/> 
+				 Our network-family extends throughout the Midwest and beyond; touching on several key industries including Entertainment, Design, and Marketing.  
+				 <br/> <br/>
 
+				This is your invitation to plug-in, to expand your brand/company with our services.
+				<br/> <br/>
+
+
+				<div style={{textAlign:'center'}}>……..……..……..……..……..……..……..……..……..……..……..……..……..……..……..……..</div>
+				<br/><br/>
+
+				</strong>
+ 
  				<strong>
 				Event Services:  &nbsp;
 				</strong> 
@@ -36,6 +42,9 @@ class Services extends Component {
 				Head over to our Contact Us page here on the website to request a quote!
 				<br/><br/>
 
+
+				<div style={{textAlign:'center'}}>……..……..……..……..……..……..……..……..……..……..……..……..……..……..……..……..</div>
+				<br/> <br/>
 				<strong>
 				Digital Design: &nbsp;
 				</strong> 
