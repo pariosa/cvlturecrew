@@ -24,7 +24,7 @@ render() {
         return(
             <div className="PastEvents">
  
-           		<div style={{fontSize:'40px',textAlign:'center'}}>PAST EVENTS</div>
+           		<div style={{fontSize:'36px',textAlign:'center', lineHeight:'1em',fontFamily: 'Orbitron'}}>PAST EVENTS</div>
       				<br/><br/>
       				<img src={FLYER}  onClick={() => this.setState({ isOpen: true })} style={{maxWidth:'100%'}}/>
               <br/><br/>

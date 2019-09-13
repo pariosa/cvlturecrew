@@ -25,7 +25,7 @@ class Events extends Component {
  
         return(
             <div className="Events">
-           		<div style={{fontSize:'40px',textAlign:'center'}}>UPCOMING</div>
+           		<div style={{fontSize:'36px',textAlign:'center', lineHeight:'1em',fontFamily: 'Orbitron'}}>UPCOMING</div>
            		<br/><br/>
             	<img src={LATESTGREATEST}  onClick={() => this.setState({ isOpen: true })} style={{maxWidth:'100%'}}/> 
                 

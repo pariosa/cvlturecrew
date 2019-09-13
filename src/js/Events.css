@@ -2,25 +2,29 @@
     width:75%;
     margin:0 auto;
     padding:50px; 
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Orbitron', sans-serif;
     font-size:17px;
+    border-radius:0.5em;
     margin-top:10%;
+    text-align:center;
     color:white;
-    background-color: #ab4aff;    
+    background-color: rgb(171, 74, 255, 0.4);
     /*max-height:1vh;*/
     margin-left:13%;
     /*top:-1050px;*/ 
  }
  .PastEvents{
     width:75%;
+    border-radius:0.5em;
     /*max-height:1vh;*/
     margin:0 auto;
     padding:50px;
     margin-top:100px;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Orbitron', sans-serif;
     font-size:17px;
     color:white;
-    background-color:  #ab4aff;
+    text-align:center;
+    background-color: rgb(171, 74, 255, 0.4);
     margin-left:13%;
     /*top:-1050px;*/ 
     margin-bottom:35%;
@@ -28,11 +32,17 @@
  }
  .Events > img{
    max-width:200px;
+   max-height:300px;
    cursor:pointer;
    margin:0 auto; 
+   text-align:center;
    position:relative;
 }
  .PastEvents > img{ 
+   max-height:300px;
+   align:center;
    cursor:pointer;
+   margin:0 auto;
     max-width:200px;
+    text-align:center;
  }

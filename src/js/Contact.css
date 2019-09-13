@@ -6,7 +6,9 @@
     font-family: 'Quicksand', sans-serif;
     font-size:17px;
     color:white;
-    background-color:  #ab4aff;
+     
+    background-color: rgb(171, 74, 255, 0.4);
+    border-radius:0.5em;
     margin-left:13%;
     margin-bottom:35%;
     position:absolute;

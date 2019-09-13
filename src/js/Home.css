@@ -7,6 +7,7 @@
     font-size:17px;
     color:white;
     margin-left:13%;
-    position:absolute;
-    background-color:  #ab4aff;
+    position:absolute; 
+    background-color:  rgb(171, 74, 255, 0.4);
+    border-radius:0.5em;
 }

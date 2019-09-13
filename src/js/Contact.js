@@ -1,9 +1,11 @@
 import React, { Component } from 'react'; 
+import { Button } from 'semantic-ui-react'
 import './Contact.css';
 
 class Contact extends Component {
  state = {
-    feedback: '',
+    subject:'',
+    body: '',
     formSubmitted: false
   };
 
@@ -19,9 +21,20 @@ class Contact extends Component {
   }
 
   handleChange(event) {
-    this.setState({
-      feedback: event.target.value
-    });
+    //debugger;
+    if(event && event.target){
+      if(event.target.name === 'subject'){
+        this.setState({
+          subject: event.target.value
+        });
+      }
+      if(event.target.name === 'body'){
+        this.setState({
+          body: event.target.value
+        })
+      }
+    }
+
   }
 
   handleSubmit(event) {
@@ -31,53 +44,46 @@ class Contact extends Component {
       REACT_APP_EMAILJS_RECEIVER: receiverEmail,
       REACT_APP_EMAILJS_TEMPLATEID: template
     } = this.props.env; 
-    this.sendFeedback(
-      template,
-      this.sender,
-      receiverEmail,
-      this.state.feedback
-    );
+    
 
     this.setState({
       formSubmitted: true
     });
   }
 
-  sendFeedback(templateId, senderEmail, receiverEmail, feedback) {
-    window.emailjs
-      .send('mailgun', templateId, {
-        senderEmail,
-        receiverEmail,
-        feedback
-      })
-      .then(res => {
-        this.setState({
-          formEmailSent: true
-        });
-      })
-      // Handle errors here however you like
-      .catch(err => console.error('Failed to send feedback. Error: ', err));
-  } 
+   
   render() {     
         return(
-            <div className="Contact">
-				<form className="feedback-form" onSubmit={this.handleSubmit}>
-				  <h1>Send us an Email!</h1>
-				  <textarea
+            <div className="Contact"> 
+           		<div style={{fontSize:'36px',textAlign:'center', lineHeight:'1em',fontFamily: 'Orbitron'}}>			  Contact</div>
+          <h3>You’ve made it to the best part of the website! This is where you reach out, and where we further our relationship to something that transpires GROWTH for us both. Please be sure to fill out the form, ensuring all of your information is accurate.</h3>
+          <input
+           name="subject"
+           placeholder="Enter subject/topic"
+
+           onChange={this.handleChange}
+           value={this.state.subject}
+           />
+<br/>
+				  <textarea 
 				    className="text-input"
-				    id="feedback-entry"
-				    name="feedback-entry"
+				    id="body"
+				    name="body"
 				    onChange={this.handleChange}
 				    placeholder="Enter your message here"
 				    required
 				    cols='50'
 				    rows='9'
-				    value={this.state.feedback}
+				    value={this.state.body}
 				  />
+          <br/>
 				  <div className="btn-group"> 
-				    <input type="submit" value="Submit" className="btn btn--submit" />
-				  </div>
-				</form>
+          <a href={'mailto:info@cvlturecrew.com?&subject=' + this.state.subject + '&body=' + this.state.body}>
+          <Button primary href={'mailto:info@cvlturecrew.com?&subject=' + this.state.subject + '&body=' + this.state.body}> 
+          Send Mail
+          </Button> 
+          </a>
+ </div> 
             </div>
         )
     }

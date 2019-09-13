@@ -6,7 +6,7 @@ class Services extends Component {
   render() {     
         return(
             <div className="Services" style={{fontSize:'21px',lineHeight:'1em'}}>
-				<div style={{fontSize:'39px'}}>SERVICES</div>
+				<div style={{fontSize:'39px',fontFamily: 'Orbitron'}}>SERVICES</div>
 				<br/> <br/>
  				<strong>
 				 Our network-family extends throughout the Midwest and beyond; touching on several key industries including Entertainment, Design, and Marketing.  
@@ -16,7 +16,7 @@ class Services extends Component {
 				<br/> <br/>
 
 
-				<div style={{textAlign:'center'}}>……..……..……..……..……..……..……..……..……..……..……..……..……..……..……..……..</div>
+ 				<hr/>
 				<br/><br/>
 
 				</strong>
@@ -42,9 +42,8 @@ class Services extends Component {
 				Head over to our Contact Us page here on the website to request a quote!
 				<br/><br/>
 
-
-				<div style={{textAlign:'center'}}>……..……..……..……..……..……..……..……..……..……..……..……..……..……..……..……..</div>
-				<br/> <br/>
+<hr/>
+ 				<br/> <br/>
 				<strong>
 				Digital Design: &nbsp;
 				</strong> 
@@ -56,10 +55,9 @@ class Services extends Component {
 
 				<br/><br/>
 
+<hr/>	
 
-
-<div style={{textAlign:'center'}}>……..……..……..……..……..……..……..……..……..……..……..……..……..……..……..……..</div>
-				<br/>
+ 				<br/>
  <i><strong><div style={{textAlign:'center'}}>What’s coming soon?</div></strong>
  				<br/> 
 

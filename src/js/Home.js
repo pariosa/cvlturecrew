@@ -6,7 +6,7 @@ class Home extends Component {
   render() {     
         return(
             <div className="Home">
-          		<div className="BannerText" style={{fontSize:'36px',textAlign:'center', lineHeight:'1em'}}>
+          		<div className="BannerText" style={{fontSize:'36px',textAlign:'center', lineHeight:'1em',fontFamily: 'Orbitron'}}>
           		YOU ARE NOW LOCKED IN WITH THE #CREW
           		</div>
           		<br/>
