@@ -1,12 +1,10 @@
 import React, { Component } from 'react'; 
 import './Events.css';
-import LATESTGREATEST from '../img/LATESTGREATEST.jpg'
-import TRAPPED from '../img/TRAPPED.jpg'
-import FLYER from '../img/FLYER.jpg' 
+import lyfe from '../img/lyfe.jpg'  
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
 const images = [
-    LATESTGREATEST, 
+    lyfe, 
   ];
 class Events extends Component {
  
@@ -27,7 +25,7 @@ class Events extends Component {
             <div className="Events">
            		<div style={{fontSize:'36px',textAlign:'center', lineHeight:'1em',fontFamily: 'Orbitron'}}>UPCOMING</div>
            		<br/><br/>
-            	<img src={LATESTGREATEST}  onClick={() => this.setState({ isOpen: true })} style={{maxWidth:'100%'}}/> 
+            	<img src={lyfe}  onClick={() => this.setState({ isOpen: true })} style={{maxWidth:'100%'}}/> 
                 
                 {isOpen && (
                     <Lightbox

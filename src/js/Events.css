@@ -7,7 +7,9 @@
     border-radius:0.5em;
     margin-top:10%;
     text-align:center;
+    height:12200px;
     color:white;
+    position:relative;
     background-color: rgb(171, 74, 255, 0.4);
     /*max-height:1vh;*/
     margin-left:13%;
@@ -19,6 +21,7 @@
     /*max-height:1vh;*/
     margin:0 auto;
     padding:50px;
+    height:9900px;
     margin-top:100px;
     font-family: 'Orbitron', sans-serif;
     font-size:17px;

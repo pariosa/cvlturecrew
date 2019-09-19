@@ -133,9 +133,9 @@ class App extends Component {
               </div>
             </div>
             <div label="Events">
-              <div className="content-bg">
-              <Particles className="Particles"
-
+              <div className="content-bg" style={{height:'1900px'}}>
+>
+              <Particles className="Particles" 
                   params={{
                     "particles": {
                         "number": {
