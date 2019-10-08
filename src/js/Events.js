@@ -1,13 +1,11 @@
 import React, { Component } from 'react'; 
 import './Events.css';
-import cuttncrew from '../img/cuttncrew.jpg';
 import trap2 from '../img/trap2.jpg';
 import illuminate from '../img/illuminate.jpg';
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
 const images = [
     trap2,
-    cuttncrew,
     illuminate
   ];
 class Events extends Component {
@@ -30,7 +28,6 @@ class Events extends Component {
            		<div style={{fontSize:'36px',textAlign:'center', lineHeight:'1em',fontFamily: 'Orbitron'}}>UPCOMING</div>
            		<br/><br/>                
                    
-                <img src={cuttncrew}  onClick={() => this.setState({ isOpen: true })} style={{maxWidth:'100%'}}/> 
             	<img src={trap2}  onClick={() => this.setState({ isOpen: true })} style={{maxWidth:'100%'}}/> 
             	<img src={illuminate}  onClick={() => this.setState({ isOpen: true })} style={{maxWidth:'100%'}}/> 
 
