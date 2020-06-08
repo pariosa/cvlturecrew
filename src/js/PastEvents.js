@@ -1,5 +1,7 @@
 import React, { Component } from 'react'; 
 import './Events.css';
+import trap2 from '../img/trap2.jpg';
+import illuminate from '../img/illuminate.jpg';
 import TRAPPED from '../img/TRAPPED.jpg'
 import FLYER from '../img/FLYER.jpg'
 import Lightbox from 'react-image-lightbox';
@@ -12,7 +14,9 @@ const images = [
   lyfe,
   LATESTGREATEST,
   FLYER,
-  TRAPPED
+  TRAPPED,
+  trap2,
+  illuminate
 ];
 class PastEvents extends Component {
   constructor(props) {
@@ -37,6 +41,8 @@ render() {
               <img src={LATESTGREATEST}  onClick={() => this.setState({ isOpen: true })} style={{maxWidth:'100%'}}/>
       				<img src={FLYER}  onClick={() => this.setState({ isOpen: true })} style={{maxWidth:'100%'}}/>
               <img src={TRAPPED}  onClick={() => this.setState({ isOpen: true })} style={{maxWidth:'100%'}}/>
+            	<img src={trap2}  onClick={() => this.setState({ isOpen: true })} style={{maxWidth:'100%'}}/> 
+            	<img src={illuminate}  onClick={() => this.setState({ isOpen: true })} style={{maxWidth:'100%'}}/> 
 
               {isOpen && (
                     <Lightbox
